@@ -1,5 +1,7 @@
 body {
   font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 * {
@@ -54,12 +56,14 @@ nav ul li .homeClass {
 
 /** Healtcare start **/
 /** Virtual healthcare for you **/
-.contentBottom {
+.wrapper-content-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  width: 70%;
+}
+
+.healthcareWrapper {
+  width: 490px;
 }
 
 .healthcareWrapper h1 {
@@ -248,6 +252,17 @@ nav ul li .homeClass {
   margin-bottom: 0;
 }
 
+.buttonClick-transparent-iconable::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("./images/download-icon.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+
 .leading-box:nth-child(2) {
   flex-direction: row-reverse;
 }
@@ -319,8 +334,8 @@ nav ul li .homeClass {
 }
 
 .human-reviews small {
-    margin-top: 5px;
-    display: block;
+  margin-top: 5px;
+  display: block;
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
@@ -336,5 +351,160 @@ nav ul li .homeClass {
   font-size: 16px;
   color: #fff;
 }
-
 /* Customer saying */
+
+/* Article */
+.article {
+  margin-top: 250px;
+}
+
+.article h1 {
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.wrapper-article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-title a::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("./images/download-icon.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+  transform: rotate(270deg);
+}
+
+.wrapper-boxes {
+  width: 380px;
+  background: #ffffff;
+  background: #ffffff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.wrapper-boxes img {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wrapper-boxes img:hover {
+  opacity: 0.8;
+  transform: scaleX(0.9);
+}
+
+.article-title {
+  width: 300px;
+  padding: 30px;
+}
+
+.article-title h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.article-title p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+.article-title a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4089ed;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.article-title h4 {
+  margin: 0;
+}
+
+.buttonClick-transparent--view {
+  margin: 80px auto;
+  display: block;
+}
+
+/* Article */
+
+/* Footer */
+.footer {
+  margin-top: 150px;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title-logo {
+  width: 386px;
+}
+
+/* Logo part */
+.section-title-logo p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.section-title-logo small {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+}
+/* Logo part */
+
+.section-title strong {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-bottom: 19px;
+  display: block;
+}
+
+.section-title ul {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.section-title a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.section-title a:hover {
+  color: #000;
+}
+
+/* Footer */
